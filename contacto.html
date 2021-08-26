@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   
   
   
@@ -115,7 +116,15 @@
                         <div class="col-12 form-group" data-for="textarea">
                             <textarea name="textarea" placeholder="Mensaje" data-form-field="textarea" class="form-control" id="textarea-contacto"></textarea>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Enviar Mensaje</button></div>
+                        <script>
+                         function onSubmit(token) {
+                           document.getElementById("demo-form").submit();
+                         }
+                       </script>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"> <button class="g-recaptcha btn btn-primary display-4" 
+        data-sitekey="6Lcg4yYcAAAAAN8jomT1JeLoDcB2GBArlq9JivVd" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button> <button type="submit" class="btn btn-primary display-4">Enviar Mensaje</button></div>
                     </div>
                 </form>
             </div>
