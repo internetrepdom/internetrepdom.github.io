@@ -1,5 +1,5 @@
 /* Hide Scrollbar and Scroll Functionality */
-body.preloader-site {
+body .preloader-site {
     overflow: hidden !important;
 }
 
@@ -21,7 +21,8 @@ body.preloader-site {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 @keyframes fadeInAnimation {
@@ -281,4 +282,117 @@ a {
 
 .cid-t7SAMM50e0 .image-wrap span {
   position: relative;
+}
+
+.tooltip-inner {
+  font-family: 'GT Walsheim Pro Bold Regular' !important;
+}
+
+.border-fix {
+  border-radius: 12px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .cid-t7SIKLdplr .mbr-section-title {
+    letter-spacing: -2px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .cid-t7SIKLdplr .mbr-text, .cid-t7SIKLdplr .mbr-section-btn {
+    color: #fafafa;
+    text-align: center;
+  }
+  
+  section {
+    padding-top: 3.3rem!important;
+  }
+
+  .resized {
+    height: 300px !important;
+  }
+
+  .cid-t7TR3kQ5Ti .mbr-section-title {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: -2px;
+  }
+
+  .cid-t7TR3kQ5Ti .mbr-text, .cid-t7TR3kQ5Ti .mbr-section-btn {
+    text-align: center;
+    color: #ffffff;
+}
+
+.f11 {
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 120px;
+  display: none !important;
+}
+
+.cid-t7TLSdNI1J .mbr-section-title {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.cid-t7TLSdNI1J .mbr-text, .cid-t7TLSdNI1J .mbr-section-btn {
+  color: #ffffff;
+  text-align: center;
+}
+}
+
+.blur::before{
+  backdrop-filter: blur(12px) contrast(60%);
+  -webkit-backdrop-filter: blur(12px) contrast(60%) saturate(200%);
+  
+}
+.blur {
+  backdrop-filter: blur(12px) contrast(60%);
+  -webkit-backdrop-filter: blur(12px) saturate(200%);
+}
+
+.blur-nosat::before{
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: transparent !important;
+}
+.blur-nosat {
+  backdrop-filter: blur(12px) ;
+  -webkit-backdrop-filter: blur(12px);
+  background: transparent !important;
+}
+
+.transparent {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.cid-t7T81niW7B {
+  padding-top: 6rem;
+  padding-bottom: 0rem;
+  background-color: #353535;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #353535;
+  overflow: hidden !important;
+}
+
+.over-hidden {
+  overflow: hidden !important;
+}
+
+.over-lay {
+  overflow: overlay !important;
+}
+
+.f11 {
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 120px;
+}
+
+.transall {
+  transition: all 0.5s !important;
 }

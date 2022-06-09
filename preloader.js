@@ -2,12 +2,17 @@
 $(document).ready(function($) {
     var Body = $('body');
     Body.addClass('preloader-site');
+    $('body').addClass('over-hidden');
 });
 //when content is loaded -> delete preloader-site and fadeOut preloader
 $(window).load(function() {
-		//.fadeOut("number" ms -> change duration)
+
 		//.fadeOut("slow") -> slow fade out
-    $('.preloader-wrapper').fadeOut();
+    $('.preloader-wrapper').fadeOut(500);
     $('body').removeClass('preloader-site');
+    $('body').addClass('over-lay');
+    $(function() {
+        $('textarea').val('');
+     });
 });
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="../assets/images/diseo-sin-ttulo.svg" type="image/x-icon" />
     <meta name="description" content="Somos un movimiento que busca mejorar todo lo relacionado con telecomunicaciones en República Dominicana, y al mismo tiempo exponer ciertas injusticias de las empresas proveedoras de internet. Si apoyas nuestra causa, eres parte de nuestro movimiento.">
-    <meta content="#F56D6D" data-react-helmet="true" name="theme-color" />
+    <meta content="#6c64f6" data-react-helmet="true" name="theme-color" />
     <meta content="https://i.imgur.com/Vli9u7a.png" property="og:image" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@internetrepdom">
@@ -44,7 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../preloader.js"></script>
     <section data-bs-version="5.1" class="menu menu2 fixblur cid-t7SywNdUyx" once="menu" id="menu2-u">
-        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg blur" hidefocus="true">
             <div class="container">
                 <div class="navbar-brand">
                     <span class="navbar-logo">
@@ -125,7 +125,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 image-wrapper">
-                    <img class="w-100" src="../assets/images/undraw-all-the-data-re-hh4w.svg"
+                    <img class="w-100 animate__animated animate__delay-6s animate__fadeInDownBig animate__delay-6s" src="../assets/images/undraw-all-the-data-re-hh4w.svg"
                         alt="Estadísticas - Ilustración">
                 </div>
                 <div class="col-12 col-md">
@@ -135,7 +135,7 @@
                         <p class="mbr-text mbr-fonts-style display-7">Como comunidad recolectamos datos mediante
                             encuestas para reconocer la gravedad del problema, por ejemplo, sobre la velocidad, la
                             satisfacción del cliente, etc.<br></p>
-                        <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-7" href="#"><span
+                        <div class="mbr-section-btn mt-3"><a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aún estamos trabajando en ello" class="btn btn-secondary display-7"><span
                                     class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>Participa en
                                 la encuesta</a></div>
                     </div>
@@ -148,7 +148,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-9">
                     <div class="image-wrap mb-4">
-                        <img src="../assets/images/undraw-not-found-60pq.svg" alt="Datos - Ilustración">
+                        <img class="animate__animated animate__delay-6s animate__fadeInUpBig animate__delay-6s" src="../assets/images/undraw-not-found-60pq.svg" alt="Datos - Ilustración">
                     </div>
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Aún estamos en fase de
                             recolección de datos ;)</strong></h1>
@@ -160,7 +160,7 @@
                             class="btn btn-primary display-4" href="https://twitter.com/internetrepdom"
                             target="_blank"><span
                                 class="socicon socicon-twitter mbr-iconfont mbr-iconfont-btn"></span>Twitter</a> <a
-                            class="btn btn-primary display-4" href="#form"><span
+                            class="btn btn-primary display-4" href="/contact/#form"><span
                                 class="socicon socicon-mail mbr-iconfont mbr-iconfont-btn"></span>Correo</a></div>
                 </div>
             </div>
@@ -210,6 +210,7 @@
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../assets/popper/popper.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/tether/tether.min.js"></script>
@@ -220,6 +221,12 @@
     <script src="../dropdown.js"></script>
     <div class="cursor"></div>
     <script src="../script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+         return new bootstrap.Tooltip(tooltipTriggerEl)
+       })
+    </script>
     <input name="animation" type="hidden">
 </body>
 

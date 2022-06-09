@@ -1860,8 +1860,10 @@
   }
 }
 .animate__fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown !important;
+  animation-name: fadeInDown !important;
+  animation-delay: 1.5 !important;
+  animation-duration: 2s !important;
 }
 @-webkit-keyframes fadeInDownBig {
   from {
@@ -1890,8 +1892,9 @@
   }
 }
 .animate__fadeInDownBig {
-  -webkit-animation-name: fadeInDownBig;
-  animation-name: fadeInDownBig;
+  -webkit-animation-name: fadeInDownBig !important;
+  animation-name: fadeInDownBig !important;
+  animation-duration: 2s !important;
 }
 @-webkit-keyframes fadeInLeft {
   from {
@@ -2074,7 +2077,7 @@
 .animate__fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig !important;
-  animation-duration: 2.8s;
+  animation-duration: 2.8s !important;
 }
 @-webkit-keyframes fadeInTopLeft {
   from {
