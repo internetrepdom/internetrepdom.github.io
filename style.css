@@ -396,3 +396,52 @@ body {
 .transall {
   transition: all 0.5s !important;
 }
+
+
+.nav-active-link::before {
+ 
+    transform: translateX(-50%);
+    transform: translateY(100%);
+    border-radius: 100%;
+    position: absolute;
+    background: #6c63ff;
+    bottom: 0px;
+    height: 8px;
+    content: '';
+    width: 8px;
+  
+}
+
+.backdrop {
+  filter: drop-shadow(0px 0px 103px #6C63FF);
+  /* animation-name: fadeInUpBig, filter !important; */
+  /* animation-duration: 2.8s, 5s; */
+  /* animation: fadeInUpBig 2.8s, filter 1s !important; */
+  /* animation-iteration-count: 1, infinite;
+  animation-timing-function: linear, ease-out; */
+}
+
+.light-backdrop {
+  
+filter: drop-shadow(0px 0px 60px rgb(108, 99, 255, 0.6));
+
+}
+
+/* @keyframes filter {
+  0% {
+    filter: drop-shadow(0px 0px 0px #6C63FF);
+  }
+  25% {
+    filter: drop-shadow(0px 0px 103px #6C63FF);
+  }
+  60% {
+    filter: drop-shadow(0px 0px 0px rgb(108, 99, 255, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px rgb(108, 99, 255, 0.2));
+  }
+} */
+
+h1 {
+  letter-spacing: -2px !important;
+}

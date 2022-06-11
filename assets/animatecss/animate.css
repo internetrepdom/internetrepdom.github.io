@@ -2075,8 +2075,8 @@
   }
 }
 .animate__fadeInUpBig {
-  -webkit-animation-name: fadeInUpBig;
-  animation-name: fadeInUpBig !important;
+  -webkit-animation-name: fadeInUpBig, filter;
+  animation-name: fadeInUpBig, filter!important;
   animation-duration: 2.8s !important;
 }
 @-webkit-keyframes fadeInTopLeft {
